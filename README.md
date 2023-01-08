@@ -1,2 +1,2 @@
 # PythonIPHM
-IP header modification example written in Python.
+This Python API allows you to modify the IP header source address of a packet before sending it. It includes two functions: `modify_ip_header` and `send_packet`. The `modify_ip_header` function takes a packet and a source address as input and returns a modified version of the packet with the source address in the IP header changed. The `send_packet` function uses a raw socket to bind to the specified source address, modify the IP header using `modify_ip_header`, and send the packet to the specified destination address and port. This API can be useful for testing network devices or for creating custom packets for other purposes.
